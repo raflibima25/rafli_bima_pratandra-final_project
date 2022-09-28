@@ -10,12 +10,50 @@
 		<!-- Font -->
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+			* {
+				transition: all 0.2s ease-out;
+			}
+
+			.card {
+				display: block;
+				top: 0;
+				position: relative;
+				z-index: 0;
+				overflow: hidden;
+				border: 1px solid #f2f8f9;
+			}
+
+			.card:hover {
+				transition: all 0.2s ease-out;
+				box-shadow: 0 4px 8px rgba(38, 38, 38, 0.2);
+				top: -5px;
+			}
+
+			.card::before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: -16px;
+				right: -16px;
+				background: #00838d;
+				height: 32px;
+				width: 32px;
+				border-radius: 32px;
+				transform: scale(2);
+				transform-origin: 50% 50%;
+				transition: transform 0.15s ease-out;
+			}
+
+			.card:hover::before {
+				transform: scale(2.15);
+			}
 		</style>
 
 		<title>Final Project</title>
 	</head>
 	<body class="box-border font-['Poppins'] bg-gradient-to-r from-purple-500 to-pink-500">
-		<main class="w-11/12 lg:w-4/5 bg-white m-auto mt-6 lg:mt-14 rounded-xl">
+		<main class="w-11/12 lg:w-4/5 bg-white m-auto mt-6 lg:mt-14 rounded-xl shadow-inner">
 			<section class="px-6 sm:px-10 lg:px-16 pt-14 pb-4 bg-gray-700 text-white rounded-xl rounded-b-none">
 				<h1 class="text-3xl font-bold">Holla, I'm Rafli Bima Pratandra!</h1>
 				<p class="text-xs mt-4">I'm 7th Semester Software Engineering Student, willing to learn and able to adapt in a team or individually.</p>
@@ -40,84 +78,84 @@
 			<section class="px-6 sm:px-10 lg:px-16 pt-8 mb-5 pb-9">
 				<h1 class="text-2xl font-bold">Portofolio</h1>
 				<article class="mt-4 grid grid-rows-1 lg:grid-cols-3 lg:grid-rows-none gap-6 md:w-9/12 lg:w-full">
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
 							<p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</p>
 						</div>
 					</div>
-					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white">
+					<div class="rounded-2xl overflow-hidden shadow-lg bg-gray-800 text-white card">
 						<img class="w-full max-h-48 lg:max-h-screen" src="./assets/dummy.jpg" alt="Bromo" />
 						<div class="px-6 py-4">
 							<h2 class="text-lg font-bold">Bromo</h2>
